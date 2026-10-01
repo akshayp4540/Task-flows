@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+            <div>
+                <p class="welcome">Welcome back 👋</p>
+                <h1>TaskFlow</h1>
+                <p class="subtitle">Organize your day, one task at a time.</p>
+            </div>
+
+            <div class="date" id="date"></div>
+        </header>
+
+        <section class="add-task">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What do you need to do?"
+            >
+
+            <button id="addBtn">
+                <span>+</span> Add Task
+            </button>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span class="stat-icon blue">📋</span>
+                <div>
+                    <strong id="totalTasks">0</strong>
+                    <p>Total Tasks</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon green">✓</span>
+                <div>
+                    <strong id="completedTasks">0</strong>
+                    <p>Completed</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon orange">⏳</span>
+                <div>
+                    <strong id="remainingTasks">0</strong>
+                    <p>Remaining</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="tasks-section">
+
+            <div class="section-header">
+                <h2>My Tasks</h2>
+
+                <button id="clearBtn" class="clear-btn">
+                    Clear Completed
+                </button>
+            </div>
+
+            <div id="taskList" class="task-list"></div>
+
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">✨</div>
+                <h3>No tasks yet</h3>
+                <p>Add your first task and make your day productive!</p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>TaskFlow • Stay organized, stay productive 🚀</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
